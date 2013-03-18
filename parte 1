@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Practica4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var cuadrado = new Cuadrado(3);
+            cuadrado.Dibujar();
+            Console.WriteLine("EL VOLUMEN DEL CUADRADO ES {0}",cuadrado.Area());
+
+            Console.WriteLine("\n");
+
+            var circulo = new Circulo(5);
+            circulo.Dibujar();
+            Console.WriteLine("EL AREA DEL CIRCULO ES {0}", circulo.Area());
+
+            Console.WriteLine("\n");
+
+            var triangulo = new Triangulo(2);
+            triangulo.Dibujar();
+            Console.WriteLine("EL VOLUMEN DEL TRIANGULO  ES {0}", triangulo.Area());
+
+            Console.ReadLine();
+        }
+    }
+}
