@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Practica4
+{
+    public  class Triangulo : Figura
+    {
+        private double _vol;
+
+        public Triangulo(double vol) 
+        {
+            this._vol = vol;
+
+        }
+
+        public override void Dibujar()
+        {
+            Console.WriteLine("FIGURA TRIANGULO\n");
+        }
+
+        public override double Area()
+        {
+            return Math.Pow(this._vol, 3);
+        }
+    }
+}
